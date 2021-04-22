@@ -12,4 +12,14 @@ Ryan Gualding: Make the sprites. Make the soundtrack with Michael
 
 Tutorial for Github and Unity: https://youtu.be/qpXxcvS-g3g?t=104
 
-Github website tutorial: https://guides.github.com/activities/hello-world/
+# Tutorials
+
+Pong Ones
+
+https://noobtuts.com/unity/2d-pong-game
+
+https://www.awesomeinc.org/tutorials/unity-pong/
+
+Github Website Tutorial
+
+https://guides.github.com/activities/hello-world/
