@@ -760,6 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  axis: Vertical2
 --- !u!1 &1873374856
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  axis: Vertical
 --- !u!1 &1898269496
 GameObject:
   m_ObjectHideFlags: 0
