@@ -14,12 +14,18 @@ public class Computer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.localPosition = (Vector3)starttingPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Move();
+    }
+
+    void Move()
+    {
+        if (!ball)
+            ball = GameObject.FindGameObjectWithTag("ball");
     }
 }
