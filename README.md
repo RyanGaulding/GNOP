@@ -20,6 +20,8 @@ https://noobtuts.com/unity/2d-pong-game
 
 https://www.awesomeinc.org/tutorials/unity-pong/
 
+Basic AI: https://www.youtube.com/watch?v=oQLLfeUNsvQ 
+
 Github Website Tutorial
 
 https://guides.github.com/activities/hello-world/
