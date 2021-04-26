@@ -25,3 +25,7 @@ Basic AI: https://www.youtube.com/watch?v=oQLLfeUNsvQ
 Github Website Tutorial
 
 https://guides.github.com/activities/hello-world/
+
+
+Player Spawn
+https://www.youtube.com/watch?v=6jJ6T8M_DcM
