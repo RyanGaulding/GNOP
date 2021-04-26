@@ -5,6 +5,14 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float speed = 30;
+    public AudioSource hit;
+
+    public void PlayHit()
+    {
+        hit.Play();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +28,7 @@ public class Ball : MonoBehaviour
         //   col.collider is the racket's collider
 
         // Hit the left Racket?
+        PlayHit();
         if (col.gameObject.name == "RacketLeft")
         {
             // Calculate hit Factor
