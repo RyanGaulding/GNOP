@@ -27,6 +27,17 @@ public class Computer : MonoBehaviour
     {
         if (!ball)
             ball = GameObject.FindGameObjectWithTag("ball");
-        if(ball.GetComponent<Ball>().speed)
+        if (ball.GetComponent<Ball>().getLeft())
+        {
+            ballPos = ball.transform.localPosition;
+            if (transform.localPosition.y > bottomBounds && ballPos.y < transform.localPosition.y)
+            {
+                transform.localPosition += new Vector3(0, -moveSpeed * Time.deltaTime, 0);
+            }
+            if (transform.localPosition.y < topBounds && ballPos.y > transform.localPosition.y)
+            {
+                transform.localPosition += new Vector3(0, moveSpeed * Time.deltaTime, 0);
+            }
+        }
     }
 }

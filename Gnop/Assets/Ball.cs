@@ -63,11 +63,8 @@ public class Ball : MonoBehaviour
         return (ballPos.y - racketPos.y) / racketHeight;
     }
 
-    bool getLeft()
+    public bool getLeft()
     {
-        if (GetComponent<Rigidbody2D>().velocity.x < 0f)
-        {
-            return 
-        }
+        return GetComponent<Rigidbody2D>().velocity.x < 0f;
     }
 }
