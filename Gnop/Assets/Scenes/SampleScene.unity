@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 1841154730}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -919,6 +919,7 @@ GameObject:
   - component: {fileID: 1873374858}
   - component: {fileID: 1873374857}
   - component: {fileID: 1873374861}
+  - component: {fileID: 1873374862}
   m_Layer: 0
   m_Name: RacketLeft
   m_TagString: Untagged
@@ -1052,6 +1053,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   axis: Vertical
+--- !u!114 &1873374862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873374856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e3ceac8bc717343be0638fb636aa70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 20
+  topBounds: 17.85
+  bottomBounds: -14.24
+  starttingPosition: {x: -20.0726, y: 0.8845338}
 --- !u!1 &1898269496
 GameObject:
   m_ObjectHideFlags: 0

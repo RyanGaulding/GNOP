@@ -7,7 +7,7 @@ public class Computer : MonoBehaviour
     public float moveSpeed = 30f;
     public float topBounds = 17.85f;
     public float bottomBounds = -14.24f;
-    public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
+    public Vector2 starttingPosition = new Vector2(-20.0726f, 0.8845338f);
     private GameObject ball;
     private Vector2 ballPos;
 
