@@ -27,5 +27,6 @@ public class Computer : MonoBehaviour
     {
         if (!ball)
             ball = GameObject.FindGameObjectWithTag("ball");
+        if(ball.GetComponent<Ball>().speed)
     }
 }
