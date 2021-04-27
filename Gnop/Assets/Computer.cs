@@ -10,6 +10,7 @@ public class Computer : MonoBehaviour
     public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
     private GameObject ball;
     private Vector2 ballPos;
+    private GameObject[] ballsInPlay;
 
     // Start is called before the first frame update
     void Start()
@@ -40,5 +41,18 @@ public class Computer : MonoBehaviour
                 transform.localPosition += new Vector3(0, moveSpeed * Time.deltaTime, 0);
             }
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        ballsInPlay = GameObject.FindGameObjectsWithTag("ball");
+        for(int i = 0; i < ballsInPlay.Length; i++)
+        {
+            if (ballsInPlay[i].GetComponent<Ball>().getRight())
+            {
+                ball = ballsInPlay[i];
+                break;
+            }
+        }
+        //ball = GameObject.FindGameObjectWithTag("ball");
     }
 }
