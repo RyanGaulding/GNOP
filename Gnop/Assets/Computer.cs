@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Computer : MonoBehaviour
 {
-    public float moveSpeed = 20f;
+    public float moveSpeed = 40f;
     public float topBounds = 16.85f;
     public float bottomBounds = -13.24f;
     public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
