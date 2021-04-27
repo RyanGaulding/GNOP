@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Computer : MonoBehaviour
 {
-    public float moveSpeed = 10f;
+    public float moveSpeed = 20f;
     public float topBounds = 17.85f;
     public float bottomBounds = -14.24f;
-    public Vector2 starttingPosition = new Vector2(-20.0726f, 0.8845338f);
+    public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
     private GameObject ball;
     private Vector2 ballPos;
 
@@ -27,7 +27,7 @@ public class Computer : MonoBehaviour
     {
         if (!ball)
             ball = GameObject.FindGameObjectWithTag("ball");
-        if (ball.GetComponent<Ball>().getLeft())
+        if (ball.GetComponent<Ball>().getRight())
         {
             ballPos = ball.transform.localPosition;
             if (transform.localPosition.y > bottomBounds && ballPos.y < transform.localPosition.y)
