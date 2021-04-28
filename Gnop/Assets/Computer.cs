@@ -44,15 +44,42 @@ public class Computer : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        var list = new ArrayList(); 
         ballsInPlay = GameObject.FindGameObjectsWithTag("ball");
         for(int i = 0; i < ballsInPlay.Length; i++)
         {
             if (ballsInPlay[i].GetComponent<Ball>().getRight())
             {
-                ball = ballsInPlay[i];
-                break;
+                list.Add(ballsInPlay[i]);
             }
         }
-        //ball = GameObject.FindGameObjectWithTag("ball");
+        if (list.Count == 0)
+        {
+            float x = 27f;
+            GameObject temp=null;
+            for (int i = 0; i < ballsInPlay.Length; i++)
+            {
+                if (ballsInPlay[i].GetComponent<Rigidbody2D>().position.x<x)
+                {
+                    temp= ballsInPlay[i];
+                    x = ballsInPlay[i].GetComponent<Rigidbody2D>().position.x;
+                }
+            }
+            ball = temp;
+        }
+        else
+        {
+            float x = -27f;
+            GameObject temp = null;
+            foreach(var item in list){
+                GameObject check = (GameObject)item;
+                if (check.GetComponent<Rigidbody2D>().position.x > x)
+                {
+                    temp = check;
+                    x = check.GetComponent<Rigidbody2D>().position.x;
+                }
+            }
+            ball = temp;
+        }
     }
 }
