@@ -16,19 +16,22 @@ public class Computer : MonoBehaviour
     void Start()
     {
         transform.localPosition = (Vector3)starttingPosition;
+        ball = GameObject.FindGameObjectWithTag("ball");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Move();
+        if (ball.GetComponent<Ball>().getRight() == false)
+            findNewBall();
     }
 
     void Move()
     {
         //transform.localPosition.y > bottomBounds && 
-        if (!ball)
-            ball = GameObject.FindGameObjectWithTag("ball");
+        /*if (!ball)
+            ball = GameObject.FindGameObjectWithTag("ball");*/
         if (ball.GetComponent<Ball>().getRight())
         {
             ballPos = ball.transform.localPosition;
@@ -42,7 +45,7 @@ public class Computer : MonoBehaviour
             }
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void findNewBall()
     {
         var list = new ArrayList(); 
         ballsInPlay = GameObject.FindGameObjectsWithTag("ball");
