@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0e3ceac8bc717343be0638fb636aa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 20
   topBounds: 16.85
   bottomBounds: -13.24
   starttingPosition: {x: 21.61402, y: 1.135658}
