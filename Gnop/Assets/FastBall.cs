@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncreaseSizeBall : MonoBehaviour
+public class FastBall : MonoBehaviour
 {
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
         GameObject temp = collision.gameObject;
-        temp.transform.localScale += new Vector3(4, 4, 4);
-       
-       
+        temp.GetComponent<Ball>().increaseSpeed();
         
     }
     private void OnCollisionExit2D(Collision2D collision)

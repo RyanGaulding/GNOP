@@ -18,6 +18,10 @@ public class Ball : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
+    public void increaseSpeed()
+    {
+        speed = speed * 2;
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
