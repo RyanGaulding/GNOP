@@ -27,6 +27,14 @@ public class Ball : MonoBehaviour
         //   col.transform.position is the racket's position
         //   col.collider is the racket's collider
 
+        // portals
+        if(col.gameObject.name== "Orange Portal (1)")
+        {
+            Vector2 vel = GetComponent<Rigidbody2D>().velocity;
+            GetComponent<Transform>().Translate(10, 10, 0);
+            GetComponent<Rigidbody2D>().velocity.Set(vel.x,vel.y);
+
+        }
         // Hit the left Racket?
         PlayHit();
         if (col.gameObject.name == "RacketLeft")
