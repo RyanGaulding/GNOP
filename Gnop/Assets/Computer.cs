@@ -10,24 +10,28 @@ public class Computer : MonoBehaviour
     public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
     private GameObject ball;
     private Vector2 ballPos;
+    private GameObject[] ballsInPlay;
 
     // Start is called before the first frame update
     void Start()
     {
         transform.localPosition = (Vector3)starttingPosition;
+        ball = GameObject.FindGameObjectWithTag("ball");
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Move();
+        if (ball.GetComponent<Ball>().getRight() == false)
+            findNewBall();
     }
 
     void Move()
     {
         //transform.localPosition.y > bottomBounds && 
-        if (!ball)
-            ball = GameObject.FindGameObjectWithTag("ball");
+        /*if (!ball)
+            ball = GameObject.FindGameObjectWithTag("ball");*/
         if (ball.GetComponent<Ball>().getRight())
         {
             ballPos = ball.transform.localPosition;
@@ -39,6 +43,46 @@ public class Computer : MonoBehaviour
             {
                 transform.localPosition += new Vector3(0, moveSpeed * Time.deltaTime, 0);
             }
+        }
+    }
+    private void findNewBall()
+    {
+        var list = new ArrayList(); 
+        ballsInPlay = GameObject.FindGameObjectsWithTag("ball");
+        for(int i = 0; i < ballsInPlay.Length; i++)
+        {
+            if (ballsInPlay[i].GetComponent<Ball>().getRight())
+            {
+                list.Add(ballsInPlay[i]);
+            }
+        }
+        if (list.Count == 0)
+        {
+            float x = 27f;
+            GameObject temp=null;
+            for (int i = 0; i < ballsInPlay.Length; i++)
+            {
+                if (ballsInPlay[i].GetComponent<Rigidbody2D>().position.x<x)
+                {
+                    temp= ballsInPlay[i];
+                    x = ballsInPlay[i].GetComponent<Rigidbody2D>().position.x;
+                }
+            }
+            ball = temp;
+        }
+        else
+        {
+            float x = -27f;
+            GameObject temp = null;
+            foreach(var item in list){
+                GameObject check = (GameObject)item;
+                if (check.GetComponent<Rigidbody2D>().position.x > x)
+                {
+                    temp = check;
+                    x = check.GetComponent<Rigidbody2D>().position.x;
+                }
+            }
+            ball = temp;
         }
     }
 }
