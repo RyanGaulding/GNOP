@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour
         {
             Vector2 vel = GetComponent<Rigidbody2D>().velocity;
             GetComponent<Transform>().Translate(10, 10, 0);
-            GetComponent<Rigidbody2D>().velocity.Set(vel.x,vel.y);
+            GetComponent<Rigidbody2D>().velocity.Set(-vel.x,-vel.y);
 
         }
         // Hit the left Racket?
