@@ -18,6 +18,20 @@ public class Ball : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
+    public void increaseSpeed()
+    {
+        speed = speed * 2;
+    }
+    private Material currentMat;
+   
+    public void GhostBall()
+    {
+        int alphaVal = 0;
+        currentMat = gameObject.GetComponent<Renderer>().material;
+        Color oldColor = currentMat.color;
+        Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, 10);
+        currentMat.SetColor("_Color", newColor);
+    }
 
     void OnCollisionEnter2D(Collision2D col)
     {
