@@ -5,34 +5,46 @@ using UnityEngine;
 public class CREATESPAZBALLFOR : MonoBehaviour
 {
     private float StartTime = 0.0f;
-   
-
+    GameObject temp;
+    public bool hit = false;
+    public bool check = false;
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
       
         
-        GameObject temp = collision.gameObject;
+       temp = collision.gameObject;
         Vector3 p = temp.transform.position;
         StartTime = 4.0f;
-        while (StartTime > 0)
-        {
-            
-        }
-        temp.transform.position += new Vector3(Random.Range(-23f, 24f), Random.Range(-13f, 17f), 0);
-
-
-    }
-    private void Start()
-    {
+        hit = true;
+        transform.position = new Vector3(100, 100, 100);
+        
        
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Destroy(gameObject);
+      //  Destroy(gameObject);
     }
-    private void Update()
+    void FixedUpdate()
     {
-        StartTime -= Time.deltaTime;
+      
+        if(check)
+        {
+            if (Random.Range(0, 100) == 3)
+            {
+                temp.transform.position = new Vector3(Random.Range(-20f, 20f), Random.Range(-10f, 10f), 0);
+                check = false;
+            }
+        }
+        if(hit)
+                {
+            print("CHECKING");
+            if (Random.Range(0, 10) == 5)
+            {
+                check = true;
+            }
+        }
+       
+       
     }
 }
