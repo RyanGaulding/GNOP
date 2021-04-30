@@ -15,24 +15,17 @@ public class PointLeft : MonoBehaviour
         SetCountText();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SetCountText()
     {
-        countText.text = "Score: " + scoreLeft.ToString();
+        countText.text = "Score " + scoreLeft.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("wall"))
+        if(!collision.CompareTag("wall"))
         {
             scoreLeft++;
             SetCountText();
-           
         }
     }
 }
