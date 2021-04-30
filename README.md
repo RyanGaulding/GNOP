@@ -1,7 +1,5 @@
 # Gnop
 
-RYAN, PUT THE SPRITES IN THE FOLDER
-
 Pong with power ups. Will be a PVP pong game with AI and multiple people on one keyboard. There will also be portals that appear and cause the ball to teleport
 
 Michael Graves: Code on Unity. Make the soundtrack with Ryan
