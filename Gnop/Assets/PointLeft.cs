@@ -28,11 +28,11 @@ public class PointLeft : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("ball"))
+        if (!collision.CompareTag("wall"))
         {
             scoreLeft++;
-
             SetCountText();
+           
         }
     }
 }
