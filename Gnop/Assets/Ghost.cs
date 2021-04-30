@@ -21,15 +21,6 @@ public class Ghost : MonoBehaviour
         if (StartTime <= Time.time)
         {
             
-            // Make it visible
-            if (GetComponent<Renderer>().enabled == false)
-            {
-                GetComponent<Renderer>().enabled = true;
-            }
-            else // Make it invisible
-            {
-                GetComponent<Renderer>().enabled = false;
-            }
             // Make it wait another 100 seconds until we switch it again.
             StartTime = Time.time + m_waitInSeconds;
         }
