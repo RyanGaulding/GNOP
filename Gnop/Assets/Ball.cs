@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
     public float speed = 30;
     public AudioSource hit;
+    public GameObject blueOne;
 
     public void PlayHit()
     {
@@ -66,8 +67,7 @@ public class Ball : MonoBehaviour
         if (collision.gameObject.name == "Orange Portal (1)")
         {
             Vector2 vel = GetComponent<Rigidbody2D>().velocity;
-            GetComponent<Transform>().Translate(10, 10, 0);
-            //GetComponent<Rigidbody2D>().velocity.Set(-vel.x, -vel.y);
+            GetComponent<Transform>().position = blueOne.GetComponent<Transform>().position;
 
         }
     }
