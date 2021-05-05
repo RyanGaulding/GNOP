@@ -66,7 +66,6 @@ public class Ball : MonoBehaviour
         // portals
         if (collision.gameObject.name == "Orange Portal (1)")
         {
-            Vector2 vel = GetComponent<Rigidbody2D>().velocity;
             GetComponent<Transform>().position = blueOne.GetComponent<Transform>().position;
 
         }
