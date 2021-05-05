@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
     public float speed = 30;
     public AudioSource hit;
+    public GameObject blueOne;
 
     public void PlayHit()
     {
@@ -41,6 +42,7 @@ public class Ball : MonoBehaviour
         //   col.transform.position is the racket's position
         //   col.collider is the racket's collider
 
+        
         // Hit the left Racket?
         PlayHit();
         if (col.gameObject.name == "RacketLeft")
@@ -70,6 +72,16 @@ public class Ball : MonoBehaviour
 
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // portals
+        if (collision.gameObject.name == "Orange Portal (1)")
+        {
+            GetComponent<Transform>().position = blueOne.GetComponent<Transform>().position;
+
         }
     }
 
