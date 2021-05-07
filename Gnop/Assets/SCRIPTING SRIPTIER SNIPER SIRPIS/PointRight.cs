@@ -22,7 +22,7 @@ public class PointRight : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.CompareTag("wall"))
+        if(collision.CompareTag("ball"))
         {
             scoreRight++;
             SetCountText();
