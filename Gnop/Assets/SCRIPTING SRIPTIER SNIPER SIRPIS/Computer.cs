@@ -30,8 +30,8 @@ public class Computer : MonoBehaviour
     void Move()
     {
         //transform.localPosition.y > bottomBounds && 
-        /*if (!ball)
-            ball = GameObject.FindGameObjectWithTag("ball");*/
+        if (!ball)
+            ball = GameObject.FindGameObjectWithTag("ball");
         if (ball.GetComponent<Ball>().getRight())
         {
             ballPos = ball.transform.localPosition;
