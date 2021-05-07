@@ -27,7 +27,6 @@ public class Ball : MonoBehaviour
    
     public void GhostBall()
     {
-        int alphaVal = 0;
         currentMat = gameObject.GetComponent<Renderer>().material;
         Color oldColor = currentMat.color;
         Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, 10);
