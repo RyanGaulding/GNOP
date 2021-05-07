@@ -5,9 +5,9 @@ using UnityEngine;
 public class Computer : MonoBehaviour
 {
     public float moveSpeed = 400f;
-    public float topBounds = 16.85f;
-    public float bottomBounds = -13.24f;
-    public Vector2 starttingPosition = new Vector2(21.61402f, 1.135658f);
+    public float topBounds = 24f;
+    public float bottomBounds = -24f;
+    public Vector2 starttingPosition = new Vector2(31f, 1.6f);
     private GameObject ball;
     private Vector2 ballPos;
     private GameObject[] ballsInPlay;
