@@ -7,10 +7,11 @@ public class clearballssAsdfGfdsa : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        print("HEY");
         GameObject temp = collision.gameObject;
         SpriteRenderer rasdf = temp.GetComponent<SpriteRenderer>();
         Color newColor = rasdf.material.color;
+        rasdf.material.SetColor("_Color", Color.red);
         newColor.a = 0;
         rasdf.material.color = newColor;
         

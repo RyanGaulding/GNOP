@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CREATESPAZBALLFOR : MonoBehaviour
 {
-    private float StartTime = 0.0f;
     GameObject temp;
     public bool hit = false;
     public bool check = false;
@@ -15,7 +14,6 @@ public class CREATESPAZBALLFOR : MonoBehaviour
         
        temp = collision.gameObject;
         Vector3 p = temp.transform.position;
-        StartTime = 4.0f;
         hit = true;
         transform.position = new Vector3(100, 100, 100);
         
