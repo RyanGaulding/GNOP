@@ -38,7 +38,7 @@ public class CREATESPAZBALLFOR : MonoBehaviour
         }
         if(hit)
                 {
-            print("CHECKING");
+            //print("CHECKING");
             if (Random.Range(0, 10) == 5)
             {
                 check = true;
