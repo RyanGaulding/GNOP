@@ -1914,6 +1914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441707815}
   - component: {fileID: 1441707814}
+  - component: {fileID: 1441707816}
   m_Layer: 0
   m_Name: PortalOut
   m_TagString: Untagged
@@ -1986,6 +1987,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441707816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441707813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6057309637c2e0b408ba1e8a46e26ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goingUp: 1
 --- !u!1 &1490618799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,6 +2386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751658514}
+  - component: {fileID: 1751658515}
   m_Layer: 0
   m_Name: OragnePortal
   m_TagString: Untagged
@@ -2395,6 +2410,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1751658515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751658513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6057309637c2e0b408ba1e8a46e26ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goingUp: 0
 --- !u!1 &1873374856
 GameObject:
   m_ObjectHideFlags: 0
