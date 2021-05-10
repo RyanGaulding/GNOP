@@ -1656,8 +1656,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1179100994}
   - component: {fileID: 1179100993}
-  - component: {fileID: 1179100992}
   - component: {fileID: 1179100991}
+  - component: {fileID: 1179100992}
   m_Layer: 0
   m_Name: ScoreWallLeft
   m_TagString: Untagged
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc76f81eea6fd4d4cb8e818f4b37b0c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countText: {fileID: 678020882}
+  countText: {fileID: 971057477}
 --- !u!212 &1179100993
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed5ccd33daa2c448bbc7ee5871d0b10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countText: {fileID: 971057477}
+  countText: {fileID: 678020882}
 --- !u!61 &1725739910
 BoxCollider2D:
   m_ObjectHideFlags: 0
