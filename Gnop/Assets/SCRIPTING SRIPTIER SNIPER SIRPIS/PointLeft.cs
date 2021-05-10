@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PointLeft : MonoBehaviour
 {
@@ -22,10 +23,18 @@ public class PointLeft : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if(!collision.CompareTag("wall"))
         {
             scoreLeft++;
             SetCountText();
         }
+        
+        if(scoreLeft == 5)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
+    
     }
+
 }
