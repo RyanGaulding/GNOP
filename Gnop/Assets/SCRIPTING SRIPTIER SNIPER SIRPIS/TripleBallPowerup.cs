@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class TripleBallPowerup : MonoBehaviour
 {
     // Start is called before the first frame update
-    
-    void Start()
+
+    public TextMeshProUGUI countText;
+    void SetCountText()
     {
-        
+        countText.text = "ThreeBall";
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,6 +22,7 @@ public class TripleBallPowerup : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        SetCountText();
         Destroy(gameObject);
     }
     // Update is called once per frame

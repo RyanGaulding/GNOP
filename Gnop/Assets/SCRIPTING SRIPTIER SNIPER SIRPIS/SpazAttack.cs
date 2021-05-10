@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class SpazAttack : MonoBehaviour
 {
+    public TextMeshProUGUI countText;
+    void SetCountText()
+    {
+        countText.text = "Glitch";
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
        
@@ -13,6 +18,7 @@ public class SpazAttack : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        SetCountText();
         Destroy(gameObject);
     }
 }
