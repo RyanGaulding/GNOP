@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class PointRight : MonoBehaviour
 {
@@ -27,11 +26,6 @@ public class PointRight : MonoBehaviour
         {
             scoreRight++;
             SetCountText();
-        }
-
-        if (scoreRight == 5)
-        {
-            SceneManager.LoadScene("EndScreen");
         }
     }
 }
