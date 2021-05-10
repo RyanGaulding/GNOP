@@ -17,8 +17,6 @@ public class Rainbow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("hey");
-
         timer += Time.deltaTime;
         if (timer >= 0.5f)//change the float value here to change how long it takes to switch.
         {
