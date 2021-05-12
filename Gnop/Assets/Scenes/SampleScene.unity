@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastBallspower
       objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
+      objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -407,7 +411,7 @@ GameObject:
   - component: {fileID: 236025196}
   m_Layer: 0
   m_Name: TripleBall
-  m_TagString: Untagged
+  m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,6 +999,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: NoSeeingBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Color.b
@@ -2056,6 +2064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RNJESUS
       objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
+      objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2338,6 +2350,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: Rainbow
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
       objectReference: {fileID: 0}
     - target: {fileID: 7512253161079640312, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_RootOrder
@@ -2902,6 +2918,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: OneTimeSpaz
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
       objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Color.b
