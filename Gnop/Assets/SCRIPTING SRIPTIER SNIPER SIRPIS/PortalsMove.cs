@@ -10,7 +10,9 @@ public class PortalsMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject portal = GameObject.Find("Orange Portal (1)");
+        Vector3 where = portal.GetComponent<Transform>().localPosition;
+        transform.localPosition.Set(where.x,where.y,where.z);
     }
 
     // Update is called once per frame
