@@ -4,11 +4,24 @@ using UnityEngine;
 
 public class PowersMove : MonoBehaviour
 {
-    GameObject[] powerups;
+    private GameObject[] powerups;
     // Start is called before the first frame update
     void Start()
     {
-        powerups = GameObject.FindGameObjectsWithTag("powerups");
+        powerups = GameObject.FindGameObjectsWithTag("powerup");
+        foreach(GameObject i in powerups)
+        {
+            i.SetActive(false);
+        }
+        //-4<x<55
+        //-24<y<24
+        foreach(GameObject i in powerups)
+        {
+            int xNew = UnityEngine.Random.Range(-4, 25);
+            int yNew = UnityEngine.Random.Range(-24, 24);
+            i.transform.localPosition.Set(xNew, yNew, 0);
+            i.SetActive(true);
+        }
     }
 
     // Update is called once per frame
