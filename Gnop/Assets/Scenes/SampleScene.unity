@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FastBallspower
       objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
+      objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -405,9 +409,10 @@ GameObject:
   - component: {fileID: 236025193}
   - component: {fileID: 236025195}
   - component: {fileID: 236025196}
+  - component: {fileID: 236025197}
   m_Layer: 0
   m_Name: TripleBall
-  m_TagString: Untagged
+  m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -516,6 +521,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1426119938}
+--- !u!114 &236025197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236025192}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321a67be20a704041afa14a93fabe9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &287003436
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1012,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: NoSeeingBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Color.b
@@ -1496,6 +1517,23 @@ Transform:
   m_Father: {fileID: 1751658514}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1079444218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+  m_PrefabInstance: {fileID: 799122869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1079444221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079444218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321a67be20a704041afa14a93fabe9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138780680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +2028,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441707813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.1, y: 13.501001, z: 0}
+  m_LocalPosition: {x: 10, y: 13.501001, z: 0}
   m_LocalScale: {x: 3.271334, y: 2.9977267, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2055,6 +2093,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: RNJESUS
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
       objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2338,6 +2380,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: Rainbow
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
       objectReference: {fileID: 0}
     - target: {fileID: 7512253161079640312, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_RootOrder
@@ -2902,6 +2948,10 @@ PrefabInstance:
     - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Name
       value: OneTimeSpaz
+      objectReference: {fileID: 0}
+    - target: {fileID: 550898043977109580, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
+      propertyPath: m_TagString
+      value: powerup
       objectReference: {fileID: 0}
     - target: {fileID: 2589949063079513493, guid: 092aa7ab7d11221459ddc9a49cf2a55a, type: 3}
       propertyPath: m_Color.b
