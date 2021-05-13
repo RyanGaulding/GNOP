@@ -11,7 +11,6 @@ public class PowersMove : MonoBehaviour
     void Start()
     {
         powerups = GameObject.FindGameObjectsWithTag("powerup");
-        //Debug.Log(powerups.Length);
         foreach(GameObject i in powerups)
         {
             i.SetActive(false);
@@ -21,22 +20,23 @@ public class PowersMove : MonoBehaviour
         foreach(GameObject i in powerups)
         {
             int xNew = UnityEngine.Random.Range(-4, 25);
-            int yNew = UnityEngine.Random.Range(-24, 24);
+            int yNew = UnityEngine.Random.Range(-22, 22);
             i.transform.position = new Vector3(xNew, yNew, 0);
-            //i.SetActive(true);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (oneSecond >= 1&&count<5)
+        if (oneSecond >= 1&&count<powerups.Length)
         {
             powerups[count].SetActive(true);
             oneSecond = 0;
             count++;
         }
-        oneSecond += Time.deltaTime;
-        Debug.Log(oneSecond);
+        if (count < powerups.Length)
+        {
+            oneSecond += Time.deltaTime;
+        }
     }
 }
