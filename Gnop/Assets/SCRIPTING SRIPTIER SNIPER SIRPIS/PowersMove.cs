@@ -9,6 +9,7 @@ public class PowersMove : MonoBehaviour
     void Start()
     {
         powerups = GameObject.FindGameObjectsWithTag("powerup");
+        Debug.Log(powerups.Length);
         foreach(GameObject i in powerups)
         {
             i.SetActive(false);
@@ -19,7 +20,7 @@ public class PowersMove : MonoBehaviour
         {
             int xNew = UnityEngine.Random.Range(-4, 25);
             int yNew = UnityEngine.Random.Range(-24, 24);
-            i.transform.localPosition.Set(xNew, yNew, 0);
+            i.transform.position = new Vector3(xNew, yNew, 0);
             i.SetActive(true);
         }
     }

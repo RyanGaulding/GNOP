@@ -409,6 +409,7 @@ GameObject:
   - component: {fileID: 236025193}
   - component: {fileID: 236025195}
   - component: {fileID: 236025196}
+  - component: {fileID: 236025197}
   m_Layer: 0
   m_Name: TripleBall
   m_TagString: powerup
@@ -520,6 +521,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1426119938}
+--- !u!114 &236025197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236025192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321a67be20a704041afa14a93fabe9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &287003436
 GameObject:
   m_ObjectHideFlags: 0
