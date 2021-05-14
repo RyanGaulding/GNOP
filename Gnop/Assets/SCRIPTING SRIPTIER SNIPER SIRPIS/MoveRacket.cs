@@ -10,6 +10,10 @@ public class MoveRacket : MonoBehaviour
     // Start is called before the first frame update
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            GetComponent<Computer>().enabled = false;
+        }
         float v = Input.GetAxisRaw(axis);
         GetComponent<Rigidbody2D>().velocity = new Vector2(0, v) * speed;
     }
