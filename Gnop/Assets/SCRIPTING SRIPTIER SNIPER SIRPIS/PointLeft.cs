@@ -32,7 +32,7 @@ public class PointLeft : MonoBehaviour
         
         if(scoreLeft == 5)
         {
-            SceneManager.LoadScene("EndScreen");
+            SceneManager.LoadScene("ENDSCREENLEFT");
         }
     
     }
