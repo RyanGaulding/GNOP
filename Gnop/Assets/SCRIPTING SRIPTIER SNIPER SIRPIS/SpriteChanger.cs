@@ -20,11 +20,11 @@ public class SpriteChanger : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) // If the space bar is pushed down
         {
-            ChangeTheDamnSprite(); // call method to change sprite
+            ChangeTheSprite(); // call method to change sprite
         }
     }
 
-    void ChangeTheDamnSprite()
+    void ChangeTheSprite()
     {
         if (spriteRenderer.sprite == sprite1) // if the spriteRenderer sprite = sprite1 then change to sprite2
         {
