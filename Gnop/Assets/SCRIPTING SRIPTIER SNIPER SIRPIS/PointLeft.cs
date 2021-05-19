@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class PointLeft : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class PointLeft : MonoBehaviour
         if(scoreLeft == 5)
         {
             SceneManager.LoadScene("ENDSCREENLEFT");
+            Task.Delay(5000);
+            Application.Quit();
         }
     
     }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class PointRight : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class PointRight : MonoBehaviour
         if (scoreRight == 5)
         {
             SceneManager.LoadScene("EndScreen");
+            Task.Delay(5000);
+            Application.Quit();
         }
     }
 }
