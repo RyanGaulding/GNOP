@@ -34,7 +34,7 @@ public class PointRight : MonoBehaviour
         {
             SceneManager.LoadScene("EndScreen");
             Task.Delay(5000);
-            Application.Quit();
+            //Application.Quit();
         }
     }
 }
