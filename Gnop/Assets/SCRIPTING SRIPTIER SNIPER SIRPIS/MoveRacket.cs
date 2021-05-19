@@ -10,6 +10,10 @@ public class MoveRacket : MonoBehaviour
     // Start is called before the first frame update
     void FixedUpdate()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             GetComponent<Computer>().enabled = false;
