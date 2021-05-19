@@ -1,14 +1,16 @@
 # Gnop
 
-Pong with power ups. Will be a PVP pong game with AI and multiple people on one keyboard. There will also be portals that appear and cause the ball to teleport
+Welcome to GNOP! by Michael Graves, Benjamin Guzman, and Ryan Gualding.
 
-Michael Graves: Code on Unity. Make the soundtrack with Ryan
+Player 1 is on the left side. Use W and S to move up and down. 
 
-Benjamin: Learn, then code in unity. Make more idea if necessary
+Player 2 is the CPU, but can become playable by pressing "2".
 
-Ryan Gualding: Make the sprites. Make the soundtrack with Michael
+The ball is the face of a young Mr. Watson, but you can change it to a normal ball by pressing the space bar.
 
-Tutorial for Github and Unity: https://youtu.be/qpXxcvS-g3g?t=104
+There are many powerups in the game! They are helpful in beating the AI. Have fun figuring out what each does!
+
+First to 5 points wins!
 
 # Tutorials
 
