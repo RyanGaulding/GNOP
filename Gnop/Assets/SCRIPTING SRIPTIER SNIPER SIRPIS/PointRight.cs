@@ -33,7 +33,7 @@ public class PointRight : MonoBehaviour
         if (scoreRight == 5)
         {
             SceneManager.LoadScene("EndScreen");
-            Task.Delay(5000);
+            //Task.Delay(50000);
             //Application.Quit();
         }
     }

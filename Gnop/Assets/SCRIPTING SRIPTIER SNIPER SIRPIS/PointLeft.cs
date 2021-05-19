@@ -34,7 +34,7 @@ public class PointLeft : MonoBehaviour
         if(scoreLeft == 5)
         {
             SceneManager.LoadScene("ENDSCREENLEFT");
-            Task.Delay(5000);
+            //Task.Delay(50000);
             //Application.Quit();
         }
     
